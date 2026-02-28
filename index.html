@@ -604,7 +604,7 @@
   <ul class="nav-links">
     <li><a href="#work">work</a></li>
     <li><a href="#about">about</a></li>
-    <li><a href="#">resume</a></li>
+    <li><a href="#" onclick="event.preventDefault(); document.getElementById('resumeModal').style.display='flex'">resume</a></li>
     <li><a href="#contact">contact</a></li>
   </ul>
 </nav>
@@ -661,7 +661,7 @@
         <h3>Design<br>Operations</h3>
         <p>Building the systems, workflows, and infrastructure that help design teams do their best work.</p>
       </div>
-      <a href="#" class="card-cta">explore →</a>
+      <a href="design-operations.html" class="card-cta">explore →</a>
     </div>
 
     <!-- Creative Production -->
@@ -671,7 +671,7 @@
         <h3>Digital<br>Production</h3>
         <p>Engineering and creative production for product builds, brand launches, and content initiatives.</p>
       </div>
-      <a href="#" class="card-cta">explore →</a>
+      <a href="digital-production.html" class="card-cta">explore →</a>
     </div>
 
     <!-- Marketing -->
@@ -830,5 +830,29 @@
       <div class="contact-card" style="background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.15);">
         <div class="contact-card-icon">🔗</div>
         <div class="contact-card-label" style="color: rgba(255,255,255,0.5);">LinkedIn</div>
-        <div class="contact-card-value" style="color: var(--warm-white);">connect</div>
+        <div class="contact-card-value" style="color: var(--warm-white);"><a href="https://www.linkedin.com/in/meagansharp/" target="_blank" style="color: var(--warm-white); text-decoration: none;">connect</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>&copy; 2026 Meagan Sharp</span>
+  <div class="footer-dot"></div>
+</footer>
+
+<!-- Resume Modal -->
+<div id="resumeModal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(26,31,61,0.6); backdrop-filter:blur(6px); align-items:center; justify-content:center;" onclick="this.style.display='none'">
+  <div style="background:var(--warm-white); border-radius:24px; padding:48px 40px; text-align:center; max-width:400px; margin:auto; position:relative; top:50%; transform:translateY(-50%);" onclick="event.stopPropagation()">
+    <div style="font-family:'Caveat',cursive; font-size:48px; margin-bottom:8px;">&#128221;</div>
+    <h3 style="font-family:'Satoshi',sans-serif; font-weight:900; font-size:24px; text-transform:uppercase; letter-spacing:-0.5px; margin-bottom:8px; color:var(--navy);">Resume</h3>
+    <p style="font-family:'Caveat',cursive; font-size:22px; color:var(--coral); margin-bottom:20px;">coming soon!</p>
+    <p style="font-family:'DM Sans',sans-serif; font-size:14px; color:var(--stone); line-height:1.6;">My resume is being updated.<br>Check back shortly.</p>
+    <button onclick="document.getElementById('resumeModal').style.display='none'" style="margin-top:24px; padding:12px 32px; background:var(--coral); color:var(--warm-white); border:none; border-radius:50px; font-family:'Satoshi',sans-serif; font-weight:700; font-size:13px; letter-spacing:2px; text-transform:uppercase; cursor:pointer; transition:all 0.3s;" onmouseover="this.style.background='var(--navy)'" onmouseout="this.style.background='var(--coral)'">Got It</button>
+  </div>
+</div>
+
+</body>
+</html>
   
