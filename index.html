@@ -696,14 +696,10 @@
         <div class="carousel-slide">
           <img src="dog-portrait.png" style="width:100%;height:100%;object-fit:cover;border-radius:20px;" alt="My dog">
         </div>
-        <div class="carousel-slide">
-          <img src="dog-beach.png" style="width:100%;height:100%;object-fit:cover;border-radius:20px;" alt="Beach day">
-        </div>
       </div>
       <div class="carousel-dots">
         <span class="carousel-dot active" onclick="event.stopPropagation(); goToSlide(0)"></span>
         <span class="carousel-dot" onclick="event.stopPropagation(); goToSlide(1)"></span>
-        <span class="carousel-dot" onclick="event.stopPropagation(); goToSlide(2)"></span>
       </div>
     </div>
     <style>
@@ -745,7 +741,7 @@
     </style>
     <script>
       let currentSlide = 0;
-      const totalSlides = 3;
+      const totalSlides = 2;
 
       function goToSlide(n) {
         document.querySelectorAll('.carousel-slide')[currentSlide].classList.remove('active');
@@ -764,9 +760,10 @@
     <div class="about-text">
       <h2>ABOUT <span class="coral">ME</span></h2>
       <div class="about-tagline">tell your dog I said hi</div>
-      <p>I'm a San Diego–based Senior Design Operations lead and Senior Digital Producer with over 10 years of experience across both in-house teams and agencies. I built my career across marketing and creative teams, working my way up to Marketing Director before transitioning into design operations, where I deepened my focus on data-informed decision making and balancing creativity with performance.</p>
-      <p>Over time, I became just as interested in how teams operated as I was in what they produced, which led me into design operations and production.</p>
-      <p>Outside of work, you'll find me surfing, sewing, or hanging out with my dog. I'm passionate about the DesignOps space and always open to connecting, especially if you're in San Diego.</p>
+      <p>Hello! I'm a San Diego-based Design Operations Lead and Senior Digital Producer with over 10 years of experience across in-house teams and agencies. I started my career in marketing, where I built a strong foundation in data and structured decision-making.</p>
+      <p>When I transitioned into creative production and design operations, it was a natural progression. I apply that same data-driven approach to improve how creative teams operate and the quality of what they produce.</p>
+      <p>I'm passionate about helping creative teams use data and AI to work smarter and make better decisions, without getting in the way of strong ideas or high-quality work.</p>
+      <p>Outside of work, you'll find me surfing, sewing, or hanging out with my dog.</p>
 
       <div style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; background: var(--warm-white); border-radius: 50px; margin-bottom: 28px;">
         <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--sage); display: inline-block; animation: pulse 2s ease-in-out infinite;"></span>
